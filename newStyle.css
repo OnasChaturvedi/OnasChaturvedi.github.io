@@ -1,0 +1,182 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2438;
+  color: #eeeeee;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5c5470;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  color: #5c5470;
+}
+
+header {
+  background-color: #111;
+  padding: 30px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Side Navigation */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Project and Content Tiles */
+.project-tile,
+.content,
+.homepage-content {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  background-color: #352f44;
+}
+
+.project-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #2a2438;
+  border-radius: 3px;
+}
+
+/* Contact Cards */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2438;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  background-color: #352f44;
+  width: 100%;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(92, 84, 112, 0.8);
+}
+
+/* Contact Card Button */
+.button {
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: #038C4C;
+  border: 2px solid #038C4C;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-color: #02733E;
+  border: 2px solid #02733E;
+  box-shadow: 0 2px 4px 0 #000;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+  color: #5c5470;
+}
+
+/* Layout Tweaks */
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+/* Media Queries */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
